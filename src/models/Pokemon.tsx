@@ -35,7 +35,7 @@ interface VerionDetails{
 }
 
 interface Move{
-  move: Generic[];
+  move: Generic;
   version_group_details: VersionGroupDetails[]
 }
 

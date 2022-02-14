@@ -62,7 +62,7 @@ export default function PokemonsList():JSX.Element {
         </div>
         {
           currentItems.length>0 && currentItems.map(item => {
-            return <PokemonItem item={item} key={item.name}/>
+            return <PokemonItem item={item} key={item.id}/>
           })
         }
       </div>

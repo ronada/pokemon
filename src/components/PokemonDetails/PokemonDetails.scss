@@ -1,0 +1,32 @@
+.details-wrapper{
+    max-width: 40%;
+    margin: 0 auto;
+    p{
+        border-bottom: 1px solid #8080804f;
+        padding-bottom: 5px;
+    }
+    .item-details{
+        table{
+            margin: 0 auto;
+            padding: 10px;
+            width: 100%;
+        }
+        ul.inline-items{
+            margin: 0;
+            padding: 0 0 0 20px;
+            li{
+                display: inline-block;
+                padding-right: 5px;
+            }
+        }
+        .go-back{
+            background: grey;
+            color: white;
+            padding: 10px 50px;
+            margin: 50px;
+            display: block;
+            max-width: 100px;
+            margin: 20px auto;
+        }
+    }
+}
