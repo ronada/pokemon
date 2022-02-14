@@ -1,6 +1,6 @@
 ## Pokemon Challenge Pages
-![Screenshot](./assets/all-pokemons.png)
-![Screenshot](./assets/details-page.png)
+![Screenshot](./src/assets/all-pokemons.png)
+![Screenshot](./src/assets/details-page.png)
 
 ## Technologies Used
 
