@@ -12,12 +12,10 @@ export default function PokemonsList():JSX.Element {
   const [currentItems, setCurrentItems] = useState<Pokemon[]>([]);
   const [pageCount, setPageCount] = useState<number>(0);
   const [offset, setOffset] = useState<number>(0);
-  const [totalPages, setTotalPages] = useState<number>(0);
-  const [currentPage, setCurrentPage] = useState<number>(0);
 
   useEffect(() => {
     getAllPokemons(limit, offset)
-  }, []);
+  }, [offset]);
 
   const getPokemonDetails = (path: string):void => {
     PokemonService.get(path)
@@ -42,37 +40,40 @@ export default function PokemonsList():JSX.Element {
           console.log("item", path)
           getPokemonDetails(path)
         })
-        //setCurrentItems(response.data.results)
-        setTotalPages(response.data.count / 16)
-        setPageCount(Math.ceil(response.data.totalPages / limit));
+        setPageCount(Math.ceil(response.data.count / limit));
       })
       .catch((e: Error) => {
         console.log(e);
       });
   };
 
-  const handlePageClick = () => {
-    //todo
+  const handlePageClick = (event: {selected:number}) => {
+    console.log("event.selected", event.selected)
+    const newOffset:number = (event.selected * limit);
+    setCurrentItems([])
+    setOffset(newOffset);
   }
   
   return (
-    <div className="items-wrapper">
-      <div className="items-title">
-        <h1>All Pokemons</h1>
+    <div className="content-wrapper">
+      <div className="items-wrapper">
+        <div className="items-title">
+          <h1>All Pokemons</h1>
+        </div>
+        {
+          currentItems.length>0 && currentItems.map(item => {
+            return <PokemonItem item={item} key={item.name}/>
+          })
+        }
       </div>
-      {
-        currentItems.length>0 && currentItems.map(item => {
-          return <PokemonItem item={item} key={item.name}/>
-        })
-      }
-      <ReactPaginate
-        breakLabel="..."
-        nextLabel="Next >"
-        onPageChange={handlePageClick}
-        pageRangeDisplayed={5}
-        pageCount={pageCount}
-        previousLabel="< Previous"
-      />
+        <ReactPaginate
+          breakLabel="..."
+          nextLabel="Next >"
+          onPageChange={handlePageClick}
+          pageRangeDisplayed={5}
+          pageCount={pageCount}
+          previousLabel="< Previous"
+        />
     </div>
   );
 }
