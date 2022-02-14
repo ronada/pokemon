@@ -6,8 +6,8 @@ import "./PokemonItem.scss"
 export const PokemonItem:React.FC<{item: Pokemon}> = (props) => {
     return (
       <div className="item">
-        <img src={pokemonImg} alt="img" />
-        <h2>Pokemon name here</h2>
+        <img src={props.item.sprites.front_default ? props.item.sprites.front_default : ""} alt="img" />
+        <h2>{props.item?.name}</h2>
       </div>
     );
 }

@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { BASE_URL } from '../constants/constants';
 
 const instance = axios.create({
-  baseURL: 'https://pokeapi.co/api/v2/',
+  baseURL: BASE_URL,
   headers: {
     'Content-Type': 'application/json',
   },

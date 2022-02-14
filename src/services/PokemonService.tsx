@@ -6,8 +6,13 @@ const getAll = async(limit: number, offset: number):Promise<AxiosResponse> => {
     return response;
 };
 
+const get = async(path: string):Promise<AxiosResponse> => {
+    const response: AxiosResponse = await axios.get(`${path}`);
+    return response;
+};
 
 const PokemonService = {
-    getAll
+    getAll,
+    get
 };
 export default PokemonService;

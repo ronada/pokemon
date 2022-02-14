@@ -1,6 +1,7 @@
 .item{
-    max-width: 60%;
-    margin: 0 auto;
+    width: 47%;
+    margin-left: 10px;
+    float: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -14,5 +15,7 @@
     img{
         max-height: 200px;
         margin-right: 10px;
+        height: 100%;
+        width: auto;
     }
 }
