@@ -1,4 +1,5 @@
 import React from 'react';
+import { PokemonItem } from '../PokemonItem/PokemonItem';
 
 export default function PokemonsList():JSX.Element {
     return (
@@ -6,7 +7,9 @@ export default function PokemonsList():JSX.Element {
         <div className="items-title">
           <h1>All Pokemons</h1>
         </div>
-        Pokemons list here ...
+        <PokemonItem />
+        <PokemonItem />
+        <PokemonItem />
       </div>
     );
   }
