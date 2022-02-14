@@ -110,7 +110,7 @@ export default function PokemonDetails():JSX.Element {
           })}
         </table>
 
-        <a href="/">Go Back</a>
+        <a href="/" className='go-back'>Go Back</a>
       </div>
     </div>
   );
