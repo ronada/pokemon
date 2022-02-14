@@ -1,11 +1,12 @@
 import React from 'react';
-import pokemon from '../../pokemon.png';
+import Pokemon from '../../models/Pokemon';
+import pokemonImg from '../../pokemon.png';
 import "./PokemonItem.scss"
 
-export const PokemonItem:React.FC = () => {
+export const PokemonItem:React.FC<{item: Pokemon}> = (props) => {
     return (
       <div className="item">
-        <img src={pokemon} alt="img" />
+        <img src={pokemonImg} alt="img" />
         <h2>Pokemon name here</h2>
       </div>
     );
