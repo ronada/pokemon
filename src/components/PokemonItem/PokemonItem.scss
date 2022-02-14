@@ -1,0 +1,21 @@
+.item{
+    width: 47%;
+    margin-left: 10px;
+    float: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #80808059;
+    padding: 10px;
+    margin-bottom: 10px;
+    &:hover{
+        cursor: pointer;
+    }
+    
+    img{
+        max-height: 200px;
+        margin-right: 10px;
+        height: 100%;
+        width: auto;
+    }
+}
