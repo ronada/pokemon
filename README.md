@@ -1,3 +1,7 @@
+## Pokemon Challenge Pages
+![Screenshot](./assets/all-pokemons.png)
+![Screenshot](./assets/details-page.png)
+
 ## Technologies Used
 
 This application is built using the latest version of React and typeScript and some additions libraries like:
