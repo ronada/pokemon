@@ -13,7 +13,7 @@ export default interface Pokemon{
   order: number;
   past_types: any[];
   species: Generic;
-  sprites: Sprite;
+  sprites: any;
   stats: Stat[];
   types: Type[];
   weight: number
@@ -67,7 +67,7 @@ interface Type{
   type: Generic
 }
 
-interface Generic{
+export interface Generic{
   name: string;
   url: string;
 }

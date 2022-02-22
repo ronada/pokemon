@@ -1,32 +1,75 @@
 .details-wrapper{
-    max-width: 40%;
+    max-width: 60%;
     margin: 0 auto;
+    padding: 30px 0;
     p{
         border-bottom: 1px solid #8080804f;
         padding-bottom: 5px;
     }
     .item-details{
+        img{
+            float: left;
+            width: 193px;
+            border: 1px solid #8080801f;
+            z-index: 9;
+            background: white;
+        }
+        
+        .left-content{
+            margin-left: 230px;
+            text-align: left;
+            h1, p{
+                text-transform: capitalize;
+            }
+            ul{
+                border-bottom: 1px solid #8080804f;
+                padding: 0 0 5px 0;
+            }
+        }
+        h2{
+            text-align: left;
+            text-transform: capitalize;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        h3{
+            text-align: left;
+            text-transform: capitalize;
+            margin-top: 30px;
+            font-size: 20px;
+        }
+        p{
+            text-align: left;
+        }
         table{
             margin: 0 auto;
             padding: 10px;
             width: 100%;
+            text-align: left;
         }
         ul.inline-items{
             margin: 0;
-            padding: 0 0 0 20px;
             li{
                 display: inline-block;
                 padding-right: 5px;
             }
         }
         .go-back{
-            background: grey;
-            color: white;
-            padding: 10px 50px;
-            margin: 50px;
             display: block;
             max-width: 100px;
-            margin: 20px auto;
+            padding-top: 10px;
+        }
+        .striped-table{
+            border: 1px solid #80808024;
+            padding: 0;
+        }
+        .striped-table>thead>tr,
+        .striped-table>tbody>tr:nth-child(even){
+            background-color: #80808024;
+        }
+        table tr td,
+        table tr th{
+            padding: 3px 10px;
         }
     }
 }
