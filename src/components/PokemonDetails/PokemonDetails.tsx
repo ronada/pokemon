@@ -94,7 +94,7 @@ export default function PokemonDetails():JSX.Element {
             </tbody>
           </table>
 
-          <h2>Moves: </h2>
+          {pokemonData?.moves!== undefined && pokemonData?.moves.length>0 && <h2>Moves: </h2>}
           {pokemonData?.moves.map((_item) => {
             return (
               <>

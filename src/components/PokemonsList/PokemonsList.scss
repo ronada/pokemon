@@ -1,10 +1,13 @@
 .content-wrapper{
     img{
         max-height: 170px;
-        margin: 25px 0;
+        margin: 25px auto;
     }
     .items-wrapper{
         width: 70%;
         margin: 0 auto;
+        img{
+            margin: 25px 0;
+        }
     }
 }

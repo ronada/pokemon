@@ -20,9 +20,8 @@
     }
     
     img{
-        max-height: 200px;
+        height: 96px;
         margin-right: 10px;
-        height: 100%;
         width: auto;
     }
 
@@ -30,5 +29,6 @@
         font-size: 18px;
         margin-top: 0;
         text-transform: capitalize;
+        min-height: 45px;
     }
 }
