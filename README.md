@@ -1,6 +1,6 @@
 ## Pokemon Challenge Pages
-![Screenshot](./src/assets/all-pokemons.png)
-![Screenshot](./src/assets/details-page.png)
+![Screenshot](./src/assets/AllPokemons.png)
+![Screenshot](./src/assets/DetailsPage.png)
 
 ## Technologies Used
 
@@ -28,9 +28,4 @@ Includes the PokemonService that have methods for get all pokemons and get pokem
 ## Improvements
 - In the details page was needed to create a reusable component for Table, but for time reasons was not possible.
 - Also for Moves in details page are a lot of data in some cases, and using pagination will be good.
-- In the Pokemons list we need to show a message when no data, and to hide paginations.
-- To add a spinner on Pokemons data load.
-- To add a NotFound page if the user type a wrong url.
 - Also Is good to write some unit tests for each component.
-- To show any message if any error happens during data fetch.
-- Also to put the pagination in a separate component
